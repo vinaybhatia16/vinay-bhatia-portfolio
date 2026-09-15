@@ -3,8 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Vinay Bhatia — Full Stack Developer portfolio" />
+  <meta name="description" content="Vinay Bhatia — Full Stack Developer portfolio. Java, Spring Boot, Angular and MySQL." />
+  <meta name="theme-color" content="#101211" />
   <title>Vinay Bhatia — Full Stack Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vinay Bhatia — Full Stack Developer" />
+  <meta property="og:description" content="Building reliable web applications from backend APIs to polished frontend experiences. Java · Spring Boot · Angular." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vinay Bhatia — Full Stack Developer" />
+  <meta name="twitter:description" content="Building reliable web applications from backend APIs to polished frontend experiences." />
+  <meta name="twitter:image" content="/og-image.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,6 +27,7 @@
 </head>
 <body>
   <div class="grain"></div>
+  <div class="progress-bar" id="progressBar"></div>
   <header class="nav">
     <a class="logo" href="#top" aria-label="Back to top">VB<span>.</span></a>
     <div class="nav-right">
@@ -24,7 +40,10 @@
   <main>
     <section class="hero" id="top">
       <div class="eyebrow">FULL STACK DEVELOPER · JAVA · ANGULAR</div>
-      <h1>VINAY<br><em>BHATIA</em></h1>
+      <div class="hero-main">
+        <h1>VINAY<br><em>BHATIA</em></h1>
+        <img class="hero-photo" src="/photo.jpg" alt="Vinay Bhatia" />
+      </div>
       <div class="hero-bottom">
         <p>Building reliable web applications from backend APIs to polished frontend experiences.</p>
         <a class="scroll" href="#intro">SCROLL ↓</a>
@@ -42,34 +61,46 @@
     <section class="projects" id="work">
       <div class="section-head"><span>SELECTED WORK</span><span>2023 — PRESENT</span></div>
 
-      <article class="project">
+      <a class="project" href="https://github.com/vinaybhatia16" target="_blank" rel="noreferrer">
         <div class="project-meta"><span>01</span><span>JAVA · SPRING BOOT · ANGULAR</span></div>
         <div class="project-title">Hospital<br><em>Management</em></div>
         <p>Patient, doctor, appointment and user management with secure authentication and role-based access.</p>
         <div class="project-footer"><div class="tags"><span>SPRING SECURITY</span><span>JWT</span><span>JPA / HIBERNATE</span><span>MYSQL</span></div><span class="project-arrow">↗</span></div>
-      </article>
+      </a>
 
-      <article class="project">
+      <a class="project" href="https://github.com/vinaybhatia16" target="_blank" rel="noreferrer">
         <div class="project-meta"><span>02</span><span>FULL STACK · E-COMMERCE</span></div>
         <div class="project-title">E-Commerce<br><em>Web Application</em></div>
         <p>Product, category, customer, cart and order management with JWT authentication, validation and REST APIs.</p>
         <div class="project-footer"><div class="tags"><span>JAVA</span><span>SPRING BOOT</span><span>ANGULAR</span><span>MYSQL</span></div><span class="project-arrow">↗</span></div>
-      </article>
+      </a>
 
-      <article class="project">
+      <a class="project" href="https://github.com/vinaybhatia16" target="_blank" rel="noreferrer">
         <div class="project-meta"><span>03</span><span>EDUCATION · MANAGEMENT</span></div>
         <div class="project-title">College &<br><em>Education System</em></div>
         <p>Management of students, faculty, colleges, courses, subjects, users, roles, marksheets and timetables.</p>
         <div class="project-footer"><div class="tags"><span>REST API</span><span>JWT</span><span>ANGULAR</span><span>JPA</span></div><span class="project-arrow">↗</span></div>
-      </article>
+      </a>
     </section>
 
     <section class="about">
       <span class="section-no">04</span>
-      <div>
-        <h2>ABOUT<br><em>ME</em></h2>
-        <p class="about-copy">I build end-to-end applications with a strong focus on clean backend architecture, secure APIs and practical user interfaces.</p>
-        <p class="muted">My day-to-day stack includes Java, Spring Boot, Spring Security, Angular, TypeScript, MySQL, Hibernate/JPA, Git and Postman.</p>
+      <div class="about-body">
+        <img class="about-photo" src="/photo.jpg" alt="Vinay Bhatia" />
+        <div>
+          <h2>ABOUT<br><em>ME</em></h2>
+          <p class="about-copy">I build end-to-end applications with a strong focus on clean backend architecture, secure APIs and practical user interfaces.</p>
+          <p class="muted">My day-to-day stack includes Java, Spring Boot, Spring Security, Angular, TypeScript, MySQL, Hibernate/JPA, Git and Postman.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="education">
+      <div class="section-head"><span>EDUCATION</span><span>MASTER'S</span></div>
+      <div class="edu-row">
+        <div class="edu-meta"><span>2023</span><span>LONDON, UK</span></div>
+        <div class="edu-title">MSc <em>Project Management</em></div>
+        <p class="muted">University of Roehampton, London</p>
       </div>
     </section>
 
@@ -90,14 +121,18 @@
         <h2>LET'S MAKE<br><em>IT REAL.</em></h2>
         <a class="mail" href="mailto:bhatia.vinay@outlook.com">bhatia.vinay@outlook.com ↗</a>
         <div class="links">
-          <a href="https://github.com/" target="_blank" rel="noreferrer">GITHUB ↗</a>
+          <a href="https://github.com/vinaybhatia16" target="_blank" rel="noreferrer">GITHUB ↗</a>
           <a href="https://www.linkedin.com/in/vinay-bhatia-504266187/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><span>© 2026 VINAY BHATIA</span><span>FULL STACK DEVELOPER</span></footer>
+  <footer>
+    <span>© 2026 VINAY BHATIA</span>
+    <a href="#top" class="to-top" aria-label="Back to top">BACK TO TOP ↑</a>
+    <span>FULL STACK DEVELOPER</span>
+  </footer>
   <script src="/script.js"></script>
 </body>
 </html>
