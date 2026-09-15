@@ -1,0 +1,1 @@
+document.querySelectorAll('.project').forEach((project,i)=>{project.addEventListener('mouseenter',()=>project.style.transform='translateX(10px)');project.addEventListener('mouseleave',()=>project.style.transform='translateX(0)')});
